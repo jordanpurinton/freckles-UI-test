@@ -4,10 +4,10 @@ import {NgZone} from 'angular2/core';
 declare var Camera:any;
 
 @Page({
-    templateUrl: 'build/pages/page1/page1.html',
+    templateUrl: 'build/pages/app/app.html',
 })
 
-export class Page1 {
+export class AppPage {
 
     _zone: any;
     platform:any;

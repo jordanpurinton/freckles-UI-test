@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ionic2-sidemenu-tabs-master.iml" filepath="$PROJECT_DIR$/ionic2-sidemenu-tabs-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freckles-UI.iml" filepath="$PROJECT_DIR$/freckles-UI.iml" />
     </modules>
   </component>
 </project>

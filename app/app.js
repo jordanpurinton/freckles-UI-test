@@ -4,33 +4,11 @@ import { TabsPage } from './pages/tabs/tabs';
 import { SettingsPage } from './pages/settings/settings';
 import { ProfilePage } from './pages/profile/profile';
 
-import {Page, NavController, Platform} from 'ionic-angular';
-import {NgZone} from 'angular2/core';
-
-declare var Camera:any;
-
-@Page({
-    templateUrl: 'build/pages/page1/page1.html',
-})
-
-export class Page1 {
-
-    _zone: any;
-    platform:any;
-    images: Array<{src: String}>;
-
-    constructor(platform:Platform, _zone : NgZone) {
-        this._zone = _zone;
-        this.platform = platform;
-        this.images = [];
-    }
-
-
 @App({
     templateUrl: 'build/app.html',
     config: {}
 })
-export class MyApp {
+export class TabsPage {
     static get parameters() {
         return [
             [IonicApp],
@@ -67,5 +45,8 @@ export class MyApp {
         this.menu.close()
         let nav = this.app.getComponent('nav');
         nav.setRoot(page.component);
+    }
+    test()
+    {   console.log(1);
     }
 }
