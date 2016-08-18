@@ -8,7 +8,7 @@ import { ProfilePage } from './pages/profile/profile';
     templateUrl: 'build/app.html',
     config: {}
 })
-export class TabsPage {
+export class DefaultPage {
     static get parameters() {
         return [
             [IonicApp],
