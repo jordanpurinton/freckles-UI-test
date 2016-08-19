@@ -2,7 +2,6 @@ import { App, Platform, IonicApp, MenuController } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 import { TabsPage } from './pages/tabs/tabs';
 import { SettingsPage } from './pages/settings/settings';
-import { ProfilePage } from './pages/profile/profile';
 
 @App({
     templateUrl: 'build/app.html',
@@ -25,8 +24,7 @@ export class DefaultPage {
         this.initializeApp();
 
         this.pages = [
-            { title: 'Tabs Page', component: TabsPage },
-            { title: 'My Account', component: ProfilePage },
+            { title: 'Home', component: TabsPage },
             { title: 'Settings', component: SettingsPage }
         ];
 

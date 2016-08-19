@@ -1,5 +1,5 @@
 import {Page, NavController, Platform} from 'ionic-angular';
-import {NgZone} from 'angular2/core';
+import {NgZone} from '../node_modules/angular2/core.d';
 
 declare var Camera:any;
 
