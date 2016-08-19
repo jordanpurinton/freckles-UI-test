@@ -18,8 +18,8 @@
     "ionic-gulp-scripts-copy": "^1.0.1",
     "run-sequence": "1.1.5"
   },
-  "name": "freckles-UI",
-  "description": "freckles-UI: An Ionic project",
+  "name": "sidemenutabs",
+  "description": "SidemenuTabs: An Ionic project",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
@@ -29,4 +29,3 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": []
-}
