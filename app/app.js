@@ -2,13 +2,19 @@ import { App, Platform, IonicApp, MenuController } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 import { TabsPage } from './pages/tabs/tabs';
 import { SettingsPage } from './pages/settings/settings';
+import {Page} from 'ionic-angular';
+import {NgZone} from 'angular2/core';
+import {Camera} from 'ionic-native';
 
 @App({
     templateUrl: 'build/app.html',
+
     config: {}
 })
 export class DefaultPage {
     static get parameters() {
+
+
         return [
             [IonicApp],
             [Platform],
@@ -24,8 +30,8 @@ export class DefaultPage {
         this.initializeApp();
 
         this.pages = [
-            { title: 'Home', component: TabsPage },
-            { title: 'Settings', component: SettingsPage }
+            {title: 'Home', component: TabsPage},
+            {title: 'Settings', component: SettingsPage}
         ];
 
         this.rootPage = TabsPage;
@@ -44,7 +50,21 @@ export class DefaultPage {
         let nav = this.app.getComponent('nav');
         nav.setRoot(page.component);
     }
-    test()
-    {   console.log(1);
+
+
+    takePicture() {
+        console.log('click');
+        Camera.getPicture({
+            destinationType: Camera.DestinationType.DATA_URL,
+            targetWidth: 1000,
+            targetHeight: 1000
+        }).then((imageData) => {
+            // imageData is a base64 encoded string
+            this.base64Image = "data:image/jpeg;base64," + imageData;
+        }, (err) => {
+            console.log(err);
+        });
     }
+
+
 }

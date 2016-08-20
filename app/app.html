@@ -1,5 +1,4 @@
 <ion-menu [content]="content">
-
     <ion-toolbar>
         <ion-title>Menu</ion-title>
     </ion-toolbar>
@@ -9,18 +8,17 @@
             <button ion-item *ngFor="#p of pages" (click)="openPage(p)">
                 {{p.title}}
             </button>
-                <ion-slides style="height: 50vh">
-                    <ion-slide *ngFor="#image of images">
-                        <ion-card>
-                            <img [src]="image.src"/>
-                        </ion-card>
-                    </ion-slide>
-                </ion-slides>
+            <ion-slides style="height: 50vh">
+                <ion-slide *ngFor="#image of images">
+                    <ion-card>
+                        <img [src]="image.src"/>
+                    </ion-card>
+                </ion-slide>
+            </ion-slides>
         </ion-list>
     </ion-content>
 </ion-menu>
-<button fab primary fab-bottom fab-center (click)=takePhoto() style="z-index: 999">
+<button fab primary fab-bottom fab-center (click)="takePicture()" style="z-index: 999">
     <ion-icon name="camera"></ion-icon>
 </button>
-<script src="camera.js" type="text/javascript"></script>
 <ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
