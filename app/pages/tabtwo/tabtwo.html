@@ -3,6 +3,9 @@
         <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Freckle Counter</ion-title>
+    <ion-buttons end>
+        <button ><ion-icon name="settings"></ion-icon></button>
+    </ion-buttons>
 </ion-navbar>
 <ion-content padding>
     <h3>Premium Version</h3>
@@ -12,5 +15,5 @@
     <p>
         Click here to purchase a more detailed analysis for 99 cents.
     </p>
-    <button class="button-balanced">Buy</button>
+    <button class="button-balanced" (click)="showActionSheet()">BUY</button>
 </ion-content>

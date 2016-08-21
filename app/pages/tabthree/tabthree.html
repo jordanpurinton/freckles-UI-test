@@ -3,10 +3,14 @@
         <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Freckle Counter</ion-title>
+    <ion-buttons end>
+        <button ><ion-icon name="settings"></ion-icon></button>
+    </ion-buttons>
 </ion-navbar>
 <ion-content padding>
     <h3>Free Version</h3>
     <p>
-        Snap a picture for a free analysis of your freckles.
+        Snap your picture for a free analysis of your freckles.
     </p>
+    <button (click)="showActionSheet()">BUY</button>
 </ion-content>
