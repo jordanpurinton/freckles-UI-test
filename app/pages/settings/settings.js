@@ -10,5 +10,7 @@ export class SettingsPage {
 
   constructor(nav) {
     this.nav = nav;
+    document.getElementById("camerabutton").style.display="none";
   }
+
 }

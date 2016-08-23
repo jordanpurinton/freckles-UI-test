@@ -18,7 +18,7 @@
         </ion-list>
     </ion-content>
 </ion-menu>
-<button fab primary fab-bottom fab-center (click)="takePicture()" style="z-index: 999">
+<button fab primary fab-bottom fab-center id=camerabutton (click)="takePicture()" style="z-index: 999">
     <ion-icon name="camera"></ion-icon>
 </button>
 <ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
