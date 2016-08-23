@@ -1,7 +1,7 @@
 import {Page} from 'ionic-angular';
-import {tab1Root} from '../tabone/tabone';
-import {tab2Root} from '../tabtwo/tabtwo';
-import {tab3Root} from '../tabthree/tabthree';
+import {tab1Root} from '../ultimate/tabone';
+import {tab2Root} from '../premium/tabtwo';
+import {tab3Root} from '../free/tabthree';
 
 
 @Page({

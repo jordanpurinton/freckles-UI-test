@@ -3,7 +3,7 @@ import {ActionSheet} from 'ionic-angular';
 
 
 @Page({
-  templateUrl: 'build/pages/tabtwo/tabtwo.html',
+  templateUrl: 'build/pages/premium/tabtwo.html',
 })
 export class tab2Root {
   static get parameters() {
@@ -16,7 +16,7 @@ export class tab2Root {
 
   showActionSheet() {
     let actionSheet = ActionSheet.create({
-      title: 'Modify your album',
+      title: 'Which version would you like?',
       buttons: [
         {
           text: 'Free Version',

@@ -1,10 +1,17 @@
 import {Page, NavController} from 'ionic-angular';
 import {ActionSheet} from 'ionic-angular';
 
+
+/*
+ Generated class for the TabthreePage page.
+
+ See http://ionicframework.com/docs/v2/components/#navigation for more info on
+ Ionic pages and navigation.
+ */
 @Page({
-  templateUrl: 'build/pages/tabone/tabone.html',
+    templateUrl: 'build/pages/free/tabthree.html',
 })
-export class tab1Root {
+export class tab3Root {
     static get parameters() {
         return [[NavController]];
     }
@@ -15,7 +22,7 @@ export class tab1Root {
 
     showActionSheet() {
         let actionSheet = ActionSheet.create({
-            title: 'Modify your album',
+            title: 'Which version would you like?',
             buttons: [
                 {
                     text: 'Free Version',
