@@ -1,17 +1,10 @@
 import {Page, NavController} from 'ionic-angular';
 import {ActionSheet} from 'ionic-angular';
 
-
-/*
- Generated class for the TabthreePage page.
-
- See http://ionicframework.com/docs/v2/components/#navigation for more info on
- Ionic pages and navigation.
- */
 @Page({
-    templateUrl: 'build/pages/free/tabthree.html',
+  templateUrl: 'build/pages/ultimate/ultimate.html',
 })
-export class tab3Root {
+export class tab1Root {
     static get parameters() {
         return [[NavController]];
     }

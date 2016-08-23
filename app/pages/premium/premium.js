@@ -3,7 +3,7 @@ import {ActionSheet} from 'ionic-angular';
 
 
 @Page({
-  templateUrl: 'build/pages/premium/tabtwo.html',
+  templateUrl: 'build/pages/premium/premium.html',
 })
 export class tab2Root {
   static get parameters() {
