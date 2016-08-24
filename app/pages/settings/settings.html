@@ -8,28 +8,28 @@
     <ion-list>
         <ion-item class="item-button-right">
             Share
-                <button clear item-right>
+                <button clear item-right (click)="shareFB()">
                     <ion-icon class="ion-logo-facebook"></ion-icon>
                 </button>
-                <button clear item-right>
+                <button clear item-right (click)="shareTwitter()">
                     <ion-icon class="ion-logo-twitter"></ion-icon>
                 </button>
         </ion-item>
         <ion-item class="item-button-right">
             Send Freckle Photo
-            <button clear item-right>
+            <button clear item-right (click)="sendFrecklePhoto()">
                 <ion-icon class="ion-md-mail"></ion-icon>
             </button>
         </ion-item>
         <ion-item class="item-button-right">
             Report a Bug
-            <button clear item-right>
+            <button clear item-right (click)="reportBug()">
                 <ion-icon class="ion-md-bug"></ion-icon>
             </button>
         </ion-item>
         <ion-item class="item-button-right">
             Terms of Privacy
-            <button clear item-right>
+            <button clear item-right (click)="termsPrivacy()">
                 <ion-icon class="ion-md-briefcase"></ion-icon>
             </button>
         </ion-item>
