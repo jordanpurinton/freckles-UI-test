@@ -57,16 +57,14 @@ export class DefaultPage {
         console.log('click');
         Camera.getPicture({
             cameraDirection: Camera.Direction.FRONT,
-            destinationType: Camera.DestinationType.FILE_URI,
-            correctOrientation: true,
-            saveToPhotoAlbum: true,
+            destinationType: Camera.DestinationType.DATA_URL,
             targetWidth: 1000,
             targetHeight: 1000
 
         }).then((imageData) => {
             // imageData is a base64 encoded string
             this.base64Image = "data:image/jpeg;base64," + imageData;
-            this.saveToPhotoAlbum(imageData);
+            //this.saveToPhotoAlbum(imageData);
         }, (err) => {
             console.log(err);
         });
