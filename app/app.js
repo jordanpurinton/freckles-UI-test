@@ -55,16 +55,17 @@ export class DefaultPage {
 
     takePicture() {
         console.log('click');
-        Camera.getPicture({
+        navigator.camera.getPicture({
             cameraDirection: Camera.Direction.FRONT,
-            destinationType: Camera.DestinationType.DATA_URL,
+            destinationType: Camera.DestinationType.FILE_URI,
             targetWidth: 1000,
-            targetHeight: 1000
+            targetHeight: 1000,
+            saveToPhotoAlbum: true
 
         }).then((imageData) => {
             // imageData is a base64 encoded string
             this.base64Image = "data:image/jpeg;base64," + imageData;
-            //this.saveToPhotoAlbum(imageData);
+            this.saveToPhotoAlbum(imageData);
         }, (err) => {
             console.log(err);
         });
